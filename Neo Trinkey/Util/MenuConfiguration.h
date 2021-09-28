@@ -19,7 +19,8 @@ Note:
 class MenuConfiguration
 {
  protected:
-	 static void print_config();
+	 static void read_flash();
+	 static void write_flash();
  public:
 	static void run();
 	static void configuration_help();
