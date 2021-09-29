@@ -6,7 +6,8 @@ Last Updated: 9/28/2021
 Note:
 */
 
-#include "MenuConfiguration.h"
+#include "RandomGenerator.h"
+#include "DeviceClock.h"
 #include "MenuMain.h"
 
 void setup() {
@@ -14,5 +15,7 @@ void setup() {
 }
 
 void loop() {
-	menu_main.read();
+	//menu_main.read();
+	//DeviceClock::run();
+	random_generator.CreateSecret(20);
 }

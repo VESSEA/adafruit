@@ -1,2 +1,8 @@
 Board - https://www.adafruit.com/product/4870
 Dependancies - https://github.com/cmaglie/FlashStorage
+
+Random Alphanumeric Generator
+https://forum.arduino.cc/t/random-alphanumeric-generator/330466
+https://github.com/Kidel/Arduino-Random-Password-Generator
+https://github.com/grcasanova/ArduPassword
+https://github.com/spaniakos/KEYGEN/blob/master/examples_RPi/RANDOM.cpp

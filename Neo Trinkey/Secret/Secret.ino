@@ -117,7 +117,7 @@ void loop()
 
 	if (qt_1.measure() > 500)
 	{
-		Keyboard.println("HELLO");
+		Keyboard.print("");
 		strip.setBrightness(20);
 		WheelCycle();
 		delay(1000);
@@ -127,7 +127,13 @@ void loop()
 
 	if (qt_2.measure() > 500)
 	{
-		theaterChaseRainbow(10);
+		Keyboard.print("");
+		strip.setBrightness(20);
+		WheelCycle();
+		delay(1000);
+		strip.setBrightness(0);
+		WheelCycle();
+		//theaterChaseRainbow(10);
 		//Mouse.move(1, 1, 0);
 		//strip.setBrightness(20);
 		//WheelCycle();

@@ -6,17 +6,9 @@ Last Updated: 9/28/2021
 Note:
 */
 
-#include "MenuConfiguration.h"
 #include "MenuMain.h"
-#include <FlashStorage.h>
-
-typedef struct {
-	boolean valid;
-	char name[10];
-} Device;
-
-FlashStorage(flash_store, Device);
-Device device;
+#include "MenuConfiguration.h"
+#include "DeviceConfiguration.h"
 
 void MenuConfiguration::run()
 {
@@ -27,10 +19,10 @@ void MenuConfiguration::run()
 		configuration_help();
 		break;
 	case 'r':
-		read_flash();
+		DeviceConfiguration::read_flash();
 		break;
 	case 'w':
-		write_flash();
+		DeviceConfiguration::write_flash();
 		break;
 	case 'x':
 		menu_main.sub_menu = 0;
@@ -49,17 +41,6 @@ void MenuConfiguration::configuration_help()
 	Serial.println("'r' Read flash.");
 	Serial.println("'w' Write default values to flash.");
 	Serial.println("'x' Exit and go to main menu.");
-}
-
-void MenuConfiguration::read_flash()
-{
-	//Serial.println("TODO read flash!");
-	Serial.println("TODO read flash!");
-}
-
-void MenuConfiguration::write_flash()
-{
-	Serial.println("TODO write flash!");
 }
 
 MenuConfiguration menu_configuration;
