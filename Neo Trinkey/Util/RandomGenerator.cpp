@@ -17,7 +17,7 @@ void RandomGenerator::CreateSecret(int numBytes)
 
 	Serial.println(rand_string);
 
-	delay(1000);
+	//delay(1000);
 }
 
 RandomGenerator random_generator;

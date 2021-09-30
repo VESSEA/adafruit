@@ -17,5 +17,5 @@ void setup() {
 void loop() {
 	//menu_main.read();
 	//DeviceClock::run();
-	random_generator.CreateSecret(20);
+	random_generator.CreateSecret(50);
 }
