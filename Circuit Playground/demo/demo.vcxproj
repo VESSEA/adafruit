@@ -116,7 +116,7 @@
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties arduino.upload.port="COM13" config.Debug.customdebug_adafruit_circuitplayground_m0_debugger_type="universal" />
+      <UserProperties arduino.upload.port="COM11" config.Debug.customdebug_adafruit_circuitplayground_m0_debugger_type="universal" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

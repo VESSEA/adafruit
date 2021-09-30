@@ -8,10 +8,8 @@ uint8_t pixeln = 0;
 void setup() {
   Serial.begin(9600);
   Serial.println("Circuit Playground test!");
-
   CircuitPlayground.begin();
 }
-
 
 void loop() {
   // turn off speaker when not in use
@@ -38,8 +36,9 @@ void loop() {
     Serial.println("Slide to the left");
   } else {
     Serial.println("Slide to the right");
-    CircuitPlayground.speaker.enable(true);
-    CircuitPlayground.playTone(500 + pixeln * 500, 100);
+    //Mute the speaker
+    //CircuitPlayground.speaker.enable(true);
+    //CircuitPlayground.playTone(500 + pixeln * 500, 100);
   }
   delay(10);
 
