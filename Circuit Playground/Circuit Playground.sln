@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "external_neopixels", "exter
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "accel_mouse", "accel_mouse\accel_mouse.vcxproj", "{5BE590D2-1CA6-4FF4-A550-3C84BADDCD77}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "comm_badge", "comm_badge\comm_badge.vcxproj", "{D238C0CB-7BD1-4B4B-A3A3-1360F496BED1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -33,6 +35,10 @@ Global
 		{5BE590D2-1CA6-4FF4-A550-3C84BADDCD77}.Debug|x86.Build.0 = Debug|Win32
 		{5BE590D2-1CA6-4FF4-A550-3C84BADDCD77}.Release|x86.ActiveCfg = Release|Win32
 		{5BE590D2-1CA6-4FF4-A550-3C84BADDCD77}.Release|x86.Build.0 = Release|Win32
+		{D238C0CB-7BD1-4B4B-A3A3-1360F496BED1}.Debug|x86.ActiveCfg = Debug|Win32
+		{D238C0CB-7BD1-4B4B-A3A3-1360F496BED1}.Debug|x86.Build.0 = Debug|Win32
+		{D238C0CB-7BD1-4B4B-A3A3-1360F496BED1}.Release|x86.ActiveCfg = Release|Win32
+		{D238C0CB-7BD1-4B4B-A3A3-1360F496BED1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

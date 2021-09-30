@@ -45,7 +45,7 @@
 #include <Adafruit_CircuitPlayground.h>
 #include <Wire.h>
 #include <SPI.h>
-#include "Adafruit_SleepyDog.h"
+//#include "Adafruit_SleepyDog.h"
 
 // Include all the demos, note that each demo is defined in a separate class to keep the sketch
 // code below clean and simple.
