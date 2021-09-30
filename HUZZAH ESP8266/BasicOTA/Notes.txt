@@ -1,0 +1,8 @@
+https://www.visualmicro.com/forums/YaBB.pl?num=1569946178
+https://www.visualmicro.com/page/How-to-install-Esp32-for-Arduino-and-Visual-Micro.aspx
+https://www.visualmicro.com/page/esp8266.aspx
+
+Board text with auth
+network.password=123
+  network.auth_upload=yes
+  network.port=8266 
