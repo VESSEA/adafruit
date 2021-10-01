@@ -1,0 +1,21 @@
+Adafruit Feather HUZZAH ESP8266
+
+https://www.adafruit.com/product/2821
+
+Adafruit 128x64 OLED FeatherWing
+
+https://www.adafruit.com/product/4650
+
+ESP8266 Board Package
+
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+DIY ESP8266 Home Security with Lua and MQTT
+
+https://learn.adafruit.com/diy-esp8266-home-security-with-lua-and-mqtt/programming-the-esp8266-with-lua
+
+Libraries
+
+Adafruit_SH110x
+Adafruit_GFX
+
