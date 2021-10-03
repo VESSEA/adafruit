@@ -24,12 +24,19 @@
     <ClInclude Include="DeviceDisplay.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DeviceOTA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Notes.txt" />
+    <Text Include="Board.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DeviceDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceOTA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

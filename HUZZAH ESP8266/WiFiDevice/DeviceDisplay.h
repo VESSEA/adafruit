@@ -13,6 +13,7 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SH110X.h>
+#include "Print.h"
 
 // OLED FeatherWing buttons map to different pins depending on board:
 #if defined(ESP8266)

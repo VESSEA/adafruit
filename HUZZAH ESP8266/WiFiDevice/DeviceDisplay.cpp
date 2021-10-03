@@ -37,7 +37,7 @@ void DeviceDisplay::setup()
 }
 
 void DeviceDisplay::printLine(const char* value)
-{\
+{
 	display.clearDisplay();
 	display.display();
 	display.setTextSize(1);

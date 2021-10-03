@@ -1,21 +1,24 @@
 Adafruit Feather HUZZAH ESP8266
-
 https://www.adafruit.com/product/2821
 
 Adafruit 128x64 OLED FeatherWing
-
 https://www.adafruit.com/product/4650
 
 ESP8266 Board Package
-
 http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 DIY ESP8266 Home Security with Lua and MQTT
-
 https://learn.adafruit.com/diy-esp8266-home-security-with-lua-and-mqtt/programming-the-esp8266-with-lua
 
 Libraries
-
 Adafruit_SH110x
 Adafruit_GFX
 
+https://www.visualmicro.com/forums/YaBB.pl?num=1569946178
+https://www.visualmicro.com/page/How-to-install-Esp32-for-Arduino-and-Visual-Micro.aspx
+https://www.visualmicro.com/page/esp8266.aspx
+
+Board text with auth
+network.password=123
+  network.auth_upload=yes
+  network.port=8266 
