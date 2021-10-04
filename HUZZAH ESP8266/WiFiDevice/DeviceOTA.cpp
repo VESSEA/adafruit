@@ -9,14 +9,14 @@ void DeviceOTA::setup() const
 	//DeviceDisplay::setup();
 
 	Serial.println("Booting");
-	DeviceDisplay::printLine("Booting");
+	device_display.printLine("Booting");
 
 	WiFi.mode(WIFI_STA);
 	WiFi.begin(ssid, password);
 	while (WiFi.waitForConnectResult() != WL_CONNECTED)
 	{
 		Serial.println("Connection Failed! Rebooting...");
-		DeviceDisplay::printLine("Connection Failed! Rebooting...");
+		device_display.printLine("Connection Failed! Rebooting...");
 
 		delay(5000);
 		ESP.restart();
@@ -94,10 +94,18 @@ void DeviceOTA::setup() const
 
 	IPAddress ip = WiFi.localIP();
 	char buffer[50];
-	sprintf(buffer, "IP V3: %d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3]);
+	sprintf(buffer, "IP V8: %d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3]);
 	//sprintf(buffer, 0, 10, " IP address: " + WiFi.localIP().toString());
 
-	DeviceDisplay::printLine(buffer);
+	//device_display.printLine(buffer);
+
+	device_display.display.clearDisplay();
+	device_display.display.display();
+	device_display.display.setTextSize(1);
+	device_display.display.setTextColor(SH110X_WHITE);
+	device_display.display.setCursor(0, 0);
+	device_display.display.println(buffer);
+	device_display.display.display(); // actually display all of the above
 
 }
 

@@ -4,7 +4,8 @@
 
 #include "DeviceDisplay.h"
 
-Adafruit_SH1107 display = Adafruit_SH1107(64, 128, &Wire);
+//Adafruit_SH1107 display = Adafruit_SH1107(64, 128, &Wire);
+//Adafruit_SH1107 display(64, 128, &Wire);
 
 void DeviceDisplay::setup()
 {

@@ -22,3 +22,7 @@ Board text with auth
 network.password=123
   network.auth_upload=yes
   network.port=8266 
+
+https://www.visualmicro.com/post/2016/01/14/How-to-improve-compile-times-dramatically.aspx
+Using the older system by unticking the "Deep Library search" menu item and then adding #includes for the required libs (to the project_name.ino) will compile in less than 1 second.
+Important: Intellisense does NOT use the deep search facility. ALL libraries that are used by the .ino or .cpp code must be #included in the project_name.ino

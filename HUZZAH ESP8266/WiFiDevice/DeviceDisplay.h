@@ -44,11 +44,14 @@
 
 class DeviceDisplay
 {
+
  protected:
 
  public:
-	static void setup();
-	static void printLine(const char* value);
+	void setup();
+	void printLine(const char* value);
+	//Adafruit_SH1107 display;
+	Adafruit_SH1107 display = Adafruit_SH1107(64, 128, &Wire);
 };
 
 extern DeviceDisplay device_display;

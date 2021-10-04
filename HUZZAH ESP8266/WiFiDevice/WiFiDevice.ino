@@ -1,11 +1,23 @@
+//#include "Configs.h"
 #include "DeviceOTA.h"
 #include "DeviceDisplay.h"
 
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_I2CDevice.h>
+#include <Adafruit_SH110X.h>
+#include <ESP8266WiFi.h>
+#include <ESP8266mDNS.h>
+#include <ArduinoOTA.h>
+
 //int i = 1;
+
+
 
 void setup() {
 	Serial.begin(115200);
-	DeviceDisplay::setup();
+	device_display.setup();
 	device_ota.setup();
 }
 
