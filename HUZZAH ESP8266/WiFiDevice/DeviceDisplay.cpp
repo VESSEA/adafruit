@@ -35,6 +35,11 @@ void DeviceDisplay::setup()
 	//display.setCursor(0, 0);
 	//display.println("OLED setup");
 	//display.display(); // actually display all of the above
+
+	//display.setFont(&FreeSans9pt7b);
+	display.setTextSize(1);
+	display.setTextColor(SH110X_WHITE);
+
 }
 
 void DeviceDisplay::printLine(const char* value)
