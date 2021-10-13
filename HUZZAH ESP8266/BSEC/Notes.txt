@@ -1,0 +1,11 @@
+https://github.com/BoschSensortec/BSEC-Arduino-library
+
+Update the following so project will compile
+
+\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\3.0.2\platform.txt
+
+# This can be overridden in boards.txt
+compiler.libraries.ldflags=
+
+## Combine gc-sections, archives, and objects
+recipe.c.combine.pattern="{compiler.path}{compiler.c.elf.cmd}" {build.exception_flags} -Wl,-Map "-Wl,{build.path}/{build.project_name}.map" {compiler.c.elf.flags} {compiler.c.elf.extra_flags} -o "{build.path}/{build.project_name}.elf" -Wl,--start-group {object_files} "{archive_file_path}" {compiler.c.elf.libs} {compiler.libraries.ldflags} -Wl,--end-group  "-L{build.path}"
