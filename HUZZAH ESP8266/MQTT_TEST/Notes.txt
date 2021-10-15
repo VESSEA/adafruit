@@ -1,0 +1,7 @@
+https://www.hivemq.com/mqtt-cloud-broker/
+
+https://flespi.com/
+
+https://io.adafruit.com/mdelgert/dashboards
+
+https://github.com/flespi-software/ESP8266_mqtts
