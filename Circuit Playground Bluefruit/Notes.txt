@@ -1,0 +1,3 @@
+https://learn.adafruit.com/adafruit-circuit-playground-bluefruit/ble-uart-controller
+
+https://github.com/adafruit/Adafruit_nRF52_Arduino/blob/master/libraries/Bluefruit52Lib/examples/Peripheral/controller/controller.ino

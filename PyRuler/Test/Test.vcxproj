@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectName>Test</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>
+    </PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Test;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\avr;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\freertos;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\linker;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\sysview;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\utility;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\variants\circuitplayground_nrf52840;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\CMSIS\5.7.0\CMSIS\Core\Include\;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\CMSIS\5.7.0\CMSIS\DSP\Include\;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic\nrfx;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic\nrfx\hal;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic\nrfx\mdk;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic\nrfx\soc;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic\nrfx\drivers\include;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic\nrfx\drivers\src;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic\softdevice\s140_nrf52_6.1.1_API\include;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\nordic\softdevice\s140_nrf52_6.1.1_API\include\nrf52;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\freertos\Source\include;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\freertos\config;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\freertos\portable\GCC\nrf52;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\freertos\portable\CMSIS\nrf52;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\sysview\SEGGER;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\cores\nRF5\sysview\Config;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\libraries\Adafruit_TinyUSB_Arduino\src\arduino;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\lib\gcc\arm-none-eabi\4.8.3\include;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\c++\4.8.3;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\c++\5.2.1;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\c++\4.8.3\arm-none-eabi;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\c++\5.2.1\arm-none-eabi;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\c++\4.8.3\bits;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\c++\5.2.1\bits;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\sys;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\newlib-nano;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\machine;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\arm-none-eabi\include\sys;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\1.1.0\system;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\avr;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\hardware\nrf52\usb;$(ProjectDir)..\..\..\..\Users\K007710\AppData\Local\arduino15\packages\adafruit\tools\arm-none-eabi-gcc\9-2019q4\lib\gcc\arm-none-eabi\5.2.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.Test.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>F_CPU=64000000;ARDUINO=108010;ARDUINO_NRF52840_CIRCUITPLAY;ARDUINO_ARCH_NRF52;NRF52840_XXAA;USBCON;USE_TINYUSB;USB_VID=0x239A;USB_PID=0x8045;SOFTDEVICE_PRESENT;ARDUINO_NRF52_ADAFRUIT;NRF52_SERIES;DX_CC_TEE;LFS_NAME_MAX=64;CFG_DEBUG=0;CFG_LOGGER=1;CFG_SYSVIEW=0;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Test.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.Test.vsarduino.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
