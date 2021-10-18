@@ -5,3 +5,5 @@ https://flespi.com/
 https://io.adafruit.com/mdelgert/dashboards
 
 https://github.com/flespi-software/ESP8266_mqtts
+
+https://github.com/flespi-software/ESP8266_mqtts/blob/master/sensor_to_flespi_mqtts/sensor_to_flespi_mqtts.ino

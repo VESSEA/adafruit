@@ -25,6 +25,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SH110X.h>
 #include <Adafruit_I2CDevice.h>
+#include <Arduino_JSON.h>
 
  /*****************^************** OLED *****************^**********************/
 Adafruit_SH1107 display = Adafruit_SH1107(64, 128, &Wire);
@@ -64,12 +65,12 @@ static const char* fingerprint PROGMEM = "59 3C 48 0A B1 8B 39 4E 0D 58 50 47 9A
 // Notice MQTT paths for AIO follow the form: <username>/feeds/<feedname>
 Adafruit_MQTT_Publish test = Adafruit_MQTT_Publish(&mqtt, AIO_USERNAME "/feeds/test");
 
-//#define STATIC_MESSAGE_BUF_LEN 256
+// JSON message creation part
+#define STATIC_MESSAGE_BUF_LEN 256
 
-//// JSON message creation part
-//JSONVar message_object;         // to store message parameters
-//String json_msg_string;         // to stringify JSON message object
-//char message_string_buf[STATIC_MESSAGE_BUF_LEN];   // to use in mqtt publish function
+JSONVar message_object;         // to store message parameters
+String json_msg_string;         // to stringify JSON message object
+char message_string_buf[STATIC_MESSAGE_BUF_LEN];   // to use in mqtt publish function
 
 void setup() {
     Serial.begin(115200);
@@ -188,13 +189,26 @@ void loop() {
     // function definition further below.
     MQTT_connect();
 
+    message_object["temperature"] = iaqSensor.temperature;
+    message_object["humidity"] = iaqSensor.humidity;
+    json_msg_string = JSON.stringify(message_object);
+    json_msg_string.toCharArray(message_string_buf, json_msg_string.length() + 1);
 
-    if (!test.publish(iaqSensor.temperature)) {
+	Serial.println(message_string_buf);
+    
+    if (!test.publish(message_string_buf)) {
         Serial.println(F("Failed"));
     }
     else {
         Serial.println(F("OK!"));
     }
+
+    //if (!test.publish(iaqSensor.temperature)) {
+    //    Serial.println(F("Failed"));
+    //}
+    //else {
+    //    Serial.println(F("OK!"));
+    //}
 
     // Now we can publish stuff!
     //Serial.print(F("\nSending val "));
